@@ -175,7 +175,6 @@
   font-family: var(--font__accent);
   font-size: 14px;
   font-weight: var(--font__accent-weight);
-  text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
   position: absolute;
@@ -185,6 +184,10 @@
     0 1px var(var(--background-color, #ffffff), #ffffff),
     1px 0 var(var(--background-color, #ffffff), #ffffff),
     0 -1px var(var(--background-color, #ffffff), #ffffff);
+}
+
+.image-group__span-up {
+  text-transform: uppercase;
 }
 
 @supports (
