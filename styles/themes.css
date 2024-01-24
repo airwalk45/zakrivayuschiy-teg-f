@@ -4,3 +4,54 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+  --accent-color: #00cc14;
+  --background-color: #000;
+  --backgroung__color__1-1: #000;
+  --backgroung__color__1-2: transparent;
+  --backgroung__color__2-1: #007f0c;
+  --backgroung__color__2-2: #004306;
+  --backgroung__color__start: 0%;
+  --font__card__header-weight: 785;
+  --font__card__text-weight: 465;
+}
+
+:root.theme-light {
+  --accent-color: black;
+  --background-color: #ffffff;
+  --backgroung__color__1-1: #d3d3d3;
+  --backgroung__color__1-2: transparent;
+  --backgroung__color__2-1: #e7e7e7;
+  --backgroung__color__2-2: #1a1a1a;
+  --backgroung__color__start: 0.01%;
+  --font__card__header-weight: 700;
+  --font__card__text-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #00cc14;
+    --background-color: #000;
+    --backgroung__color__1-1: #000;
+    --backgroung__color__1-2: transparent;
+    --backgroung__color__2-1: #007f0c;
+    --backgroung__color__2-2: #004306;
+    --backgroung__color__start: 0%;
+    --font__card__header-weight: 785;
+    --font__card__text-weight: 465;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: black;
+    --background-color: #ffffff;
+    --backgroung__color__1-1: #d3d3d3;
+    --backgroung__color__1-2: transparent;
+    --backgroung__color__2-1: #e7e7e7;
+    --backgroung__color__2-2: #1a1a1a;
+    --backgroung__color__start: 0.01%;
+    --font__card__header-weight: 700;
+    --font__card__text-weight: 400;
+  }
+}

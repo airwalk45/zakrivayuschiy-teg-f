@@ -15,6 +15,320 @@
 */
 
 .page {
-  min-inline-size: 320px;
+  display: grid;
+  justify-content: center;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
+  padding: 100px 0px;
+  background-color: var(--background-color, #ffffff);
+  background-image: repeating-linear-gradient(
+      to left,
+      var(--backgroung__color__1-1),
+      var(--backgroung__color__1-2) 2px
+    ),
+    repeating-linear-gradient(
+      to top,
+      var(--backgroung__color__1-1),
+      var(--backgroung__color__1-2) 2px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--backgroung__color__2-1) var(--backgroung__color__start),
+      var(--backgroung__color__2-2) 100%
+    );
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: var(--font__main);
+  font-variation-settings: "wght" var(--font__main-weight);
+}
+
+.content {
+  inline-size: clamp(375px, 16.285rem + 30.516vw, 700px);
+}
+
+.header {
+  background-color: var(--background-color, #ffffff);
+  margin-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 696px;
+  padding-top: clamp(7.5rem, 6.346rem + 4.923vw, 8.5rem);
+  padding-bottom: 25px;
+  border: 2px solid var(--accent-color, #000);
+}
+
+.header__text {
+  color: var(--accent-color, #000);
+  font-family: var(--font__accent);
+  font-style: normal;
+  font-weight: var(--font__accent-weight);
+  text-transform: uppercase;
+}
+
+.header__link {
+  font-weight: inherit;
+  margin-bottom: 10px;
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  text-decoration: none;
+}
+
+.header__title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-weight: inherit;
+  margin-bottom: 25px;
+}
+
+.theme-menu__list {
+  font-size: 14px;
+}
+
+.theme-menu__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.theme-menu__button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  text-transform: inherit;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+}
+
+.sprint-card {
+  max-width: 696px;
+  background-color: var(--background-color, #ffffff);
+  border: 2px solid var(--accent-color, #000);
+}
+
+.card_titel {
+  color: var(--accent-color, #000);
+  font-size: 18px;
+  font-weight: 700;
+  font-variation-settings: "wght" var(--font__main__header-weight);
+  line-height: normal;
+  padding: 5px 10px;
+}
+
+.image-group {
+  border-top: 2px solid var(--accent-color, #000);
+  border-bottom: 2px solid var(--accent-color, #000);
+  position: relative;
+}
+
+.image-group__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+  aspect-ratio: 1/1;
+}
+
+.filter-1 {
+  filter: invert(75%);
+}
+
+.filter-2 {
+  filter: brightness(0.4);
+}
+
+.filter-3 {
+  filter: sepia(60%);
+}
+
+.filter-4 {
+  filter: saturate(30%);
+}
+
+.filter-5 {
+  filter: grayscale(50%);
+}
+
+.filter-6 {
+  filter: contrast(200%);
+}
+
+.filter-7 {
+  filter: blur(5px) hue-rotate();
+}
+
+.image-group__span {
+  color: var(--accent-color, #000);
+  font-family: var(--font__accent);
+  font-size: 14px;
+  font-weight: var(--font__accent-weight);
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  position: absolute;
+  top: clamp(1.438rem, 1.291rem + 0.623vw, 1.563rem);
+  right: clamp(0.688rem, -0.335rem + 4.361vw, 1.563rem);
+  text-shadow: -1px 0 var(var(--background-color, #ffffff), #ffffff),
+    0 1px var(var(--background-color, #ffffff), #ffffff),
+    1px 0 var(var(--background-color, #ffffff), #ffffff),
+    0 -1px var(var(--background-color, #ffffff), #ffffff);
+}
+
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
+  .image-group__span {
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
+    text-shadow: none;
+  }
+}
+
+.card_paragraph {
+  color: var(--accent-color, #000);
+  font-size: 18px;
+  font-variation-settings: "wght" var(--font__main__text-weight);
+  line-height: 21px; /* 116.667% */
+  padding: 25px;
+}
+
+.card__button-group {
+  display: flex;
+  padding: 0px 25px 25px;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: none;
+  border-color: var(--accent-color, #000);
+}
+
+.sparks {
+  fill: transparent;
+}
+
+.text-button {
+  border: 2px solid var(--accent-color, #000);
+  position: relative;
+  color: var(--background-color, #ffffff);
+  font-family: var(--font__accent);
+  font-size: 14px;
+  font-weight: var(--font__accent-weight);
+  line-height: 90%;
+  background-color: var(--background-color, #ffffff);
+  cursor: pointer;
+  display: block;
+}
+
+.card__text-button {
+  min-width: 130px;
+  padding: 9px 17px;
+}
+
+.text-button:focus {
+  outline: none;
+}
+
+.text-button__text {
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__button {
+  display: flex;
+  padding: 15px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.floppy-icon {
+  width: 21px;
+  height: 21px;
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+}
+
+.dialog {
+  inline-size: clamp(341px, 20.144rem + 4.984vw, 357px);
+  padding-block: 30px;
+  gap: 20px 30px;
+  background-color: var(--background-color, #ffffff);
+  border: 2px solid var(--accent-color, black);
+}
+
+.dialog__form {
+  grid-area: button;
+}
+
+.dialog__floppy {
+  width: 39px;
+  height: 39px;
+  mix-blend-mode: normal;
+  grid-area: icon;
+}
+
+.dialog__text {
+  color: var(--accent-color, black);
+  font-family: "PressStart2P";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+  grid-area: text;
+}
+
+.dialog__button {
+  width: 100%;
+}
+
+.dialog[open] {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "icon text"
+    "button button";
+}
+
+.dialog::backdrop {
+  background-color: var(--backdrop__color, #000);
+  opacity: 0.75;
+}
+
+@media (375px >= width) {
+  :root {
+  }
+  .footer__button {
+    flex-direction: column;
+  }
 }
