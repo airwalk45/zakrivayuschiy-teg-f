@@ -326,8 +326,6 @@
 }
 
 @media (375px >= width) {
-  :root {
-  }
   .footer__button {
     flex-direction: column;
   }
