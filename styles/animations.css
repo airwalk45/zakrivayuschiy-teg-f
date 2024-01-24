@@ -26,7 +26,7 @@
 
 @keyframes heart-sparks {
   to {
-    fill: var(--icon-like-color);
+    fill: var(--icon-like-color, #ff0000);
   }
 }
 
@@ -64,6 +64,8 @@
   background-color: transparent;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
+  max-height: 38px;
+  padding-right: 1px;
 }
 
 .core {
@@ -117,7 +119,6 @@
 }
 
 .text-button:focus-visible {
-  outline: none;
   box-shadow: 2px 2px 0 var(--accent-color, #000);
   transition: box-shadow 0.3s ease;
 }

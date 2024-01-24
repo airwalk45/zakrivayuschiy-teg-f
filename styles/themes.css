@@ -7,38 +7,38 @@
 :root.theme-dark {
   --accent-color: #00cc14;
   --background-color: #000;
-  --backgroung__color__1-1: #000;
-  --backgroung__color__1-2: transparent;
-  --backgroung__color__2-1: #007f0c;
-  --backgroung__color__2-2: #004306;
-  --backgroung__color__start: 0%;
-  --font__card__header-weight: 785;
-  --font__card__text-weight: 465;
+  --backgroung-image:
+      repeating-linear-gradient(to left, #000 0px 2px, transparent 2px 4px),
+      repeating-linear-gradient(to top, #000 0px 2px, transparent 2px 4px),
+      linear-gradient(to bottom,#007f0c 0%,#004306 100%);
+  --font-card-header-weight: 785;
+  --font-card-text-weight: 465;
+  --text-button-color:  #00cc14;
 }
 
 :root.theme-light {
   --accent-color: black;
   --background-color: #ffffff;
-  --backgroung__color__1-1: #d3d3d3;
-  --backgroung__color__1-2: transparent;
-  --backgroung__color__2-1: #e7e7e7;
-  --backgroung__color__2-2: #1a1a1a;
-  --backgroung__color__start: 0.01%;
-  --font__card__header-weight: 700;
-  --font__card__text-weight: 400;
+  --backgroung-image:
+      repeating-linear-gradient(to left, #d3d3d3 0px 2px, transparent 2px 4px),
+      repeating-linear-gradient(to top, #d3d3d3 0px 2px, transparent 2px 4px),
+      linear-gradient(to bottom,#e7e7e7 0.01%,#1a1a1a 100%);
+  --font-card-header-weight: 700;
+  --font-card-text-weight: 400;
+  --text-button-color:  #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #00cc14;
     --background-color: #000;
-    --backgroung__color__1-1: #000;
-    --backgroung__color__1-2: transparent;
-    --backgroung__color__2-1: #007f0c;
-    --backgroung__color__2-2: #004306;
-    --backgroung__color__start: 0%;
-    --font__card__header-weight: 785;
-    --font__card__text-weight: 465;
+    --backgroung-image:
+        repeating-linear-gradient(to left, #000 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(to top, #000 0px 2px, transparent 2px 4px),
+        linear-gradient(to bottom,#007f0c 0%,#004306 100%);
+    --font-card-header-weight: 785;
+    --font-card-text-weight: 465;
+    --text-button-color:  #00cc14;
   }
 }
 
@@ -46,12 +46,12 @@
   :root {
     --accent-color: black;
     --background-color: #ffffff;
-    --backgroung__color__1-1: #d3d3d3;
-    --backgroung__color__1-2: transparent;
-    --backgroung__color__2-1: #e7e7e7;
-    --backgroung__color__2-2: #1a1a1a;
-    --backgroung__color__start: 0.01%;
-    --font__card__header-weight: 700;
-    --font__card__text-weight: 400;
+    --backgroung-image:
+        repeating-linear-gradient(to left, #d3d3d3 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(to top, #d3d3d3 0px 2px, transparent 2px 4px),
+        linear-gradient(to bottom,#e7e7e7 0.01%,#1a1a1a 100%);
+    --font-card-header-weight: 700;
+    --font-card-text-weight: 400;
+    --text-button-color:  #ffffff;
   }
 }
