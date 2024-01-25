@@ -37,23 +37,6 @@
   animation: header-list-arrow 0.5s ease-in-out infinite alternate;
 }
 
-.theme-menu__button::after {
-  position: absolute;
-  content: "";
-  bottom: 0px;
-  left: 0px;
-  background-color: var(--accent-color, #000);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-  height: 2px;
-  width: 100%;
-  transform-origin: left;
-}
-
-.theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
-}
-
 .theme-menu__button:hover {
   opacity: 0.6;
   transition: opacity 0.3s ease;
@@ -123,19 +106,6 @@
   transition: box-shadow 0.3s ease;
 }
 
-.text-button::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background-color: var(--accent-color, #000);
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
-}
-
 .card__icon-button .is-liked .sparks {
   animation: heart-sparks 0.3s ease-in 0.3s alternate;
   transform-origin: center;
@@ -144,8 +114,4 @@
 .card__icon-button .is-liked .heart {
   animation: heart-scale 0.3s ease-in alternate;
   transform-origin: center;
-}
-
-.text-button:hover:after {
-  transform: scaleX(1);
 }
