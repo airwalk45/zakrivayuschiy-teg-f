@@ -11,7 +11,6 @@
 */
 
 .page {
-
   display: grid;
   justify-content: center;
 
@@ -37,7 +36,7 @@
   align-items: center;
   margin-bottom: 100px;
   border: 2px solid var(--accent-color, #000);
-  padding-block: clamp(7.625rem, 7.449rem + 0.75vw, 8.125rem);
+  padding-block: clamp(122px, 7.449rem + 0.75vw, 130px);
   background-color: var(--background-color, #ffffff);
 }
 
@@ -303,5 +302,10 @@
 @media (375px >= width) {
   .footer__button {
     flex-direction: column;
+  }
+
+  .floppy-icon {
+    width: 28px;
+    height: 28px;
   }
 }
