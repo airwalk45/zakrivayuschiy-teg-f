@@ -10,7 +10,6 @@
 
 */
 
-
 @keyframes heart-scale {
   to {
     scale: 1.25;
@@ -23,13 +22,12 @@
   }
 }
 
-
 .card__icon-button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  transition: border-color 0.3s ease;
   max-height: 38px;
-  padding-right: 1px;
+  border: 2px solid transparent;
+  padding: 0;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
 }
 
 /*=====================Начальное состояние=====================*/
@@ -37,7 +35,6 @@
   fill: transparent;
   transition: fill 0.3s ease 0.05s;
 }
-
 
 .main-body {
   fill: transparent;
@@ -53,19 +50,16 @@
   fill: transparent;
 }
 
-
 /*=====================Анимация hover=====================*/
 .card__icon-button:hover .core {
   fill: var(--accent-color, #000);
   transition: fill 0.3s ease;
 }
 
-
 .card__icon-button:hover .main-body {
   fill: var(--accent-color, #000);
   transition: fill 0.3s ease 0.05s;
 }
-
 
 /*=====================Анимация active=====================*/
 .card__icon-button:active .core {
@@ -73,36 +67,33 @@
   transition: fill 0.3s ease;
 }
 
-
 .card__icon-button:active .main-body {
   fill: var(--icon-like-color, #ff0000);
   transition: fill 0.3s ease 0.05s;
 }
 
 /*=====================Анимация наличие ЛАЙК=====================*/
-.card__icon-button .is-liked .core {
+.is-liked .core {
   fill: var(--icon-like-color, #ff0000);
   transition: fill 0.3s ease;
 }
 
-
-.card__icon-button .is-liked .main-body {
+.is-liked .main-body {
   fill: var(--icon-like-color, #ff0000);
   transition: fill 0.3s ease 0.05s;
 }
 
-.card__icon-button .is-liked .contour {
+.is-liked .contour {
   fill: var(--icon-like-color, #ff0000);
   transition: fill 0.3s ease 0.06s;
 }
 
-.card__icon-button .is-liked .sparks {
-  animation: heart-sparks 0.3s ease-in 0.3s alternate;
+.is-liked .sparks {
   transform-origin: center;
+  animation: heart-sparks 0.3s ease-in 0.3s alternate;
 }
 
-
-.card__icon-button .is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s alternate;
+.is-liked .heart {
   transform-origin: center;
+  animation: heart-scale 0.3s ease-in 0.1s alternate;
 }
