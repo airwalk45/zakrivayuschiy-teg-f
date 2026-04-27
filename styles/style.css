@@ -225,10 +225,6 @@
   padding: 9px 17px;
 }
 
-.text-button:focus {
-  outline: none;
-}
-
 .button__text {
   position: relative;
   z-index: 1;
